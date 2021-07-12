@@ -2,7 +2,48 @@
   box-sizing: border-box;
 }
 
-nav {
+.accessibility-only {
+  position: absolute !important;
+  top: -9999px !important;
+  left: -9999px !important;
+}
+
+.google-navtop {
+  display: flex;
+  flex-wrap: nowrap;
+  margin-top: 20px;
+}
+
+.google-logo {
+  padding: 0px 28px;
+}
+
+.google-logo > img {
+  height: 30px;
+  width: 92px;
+}
+
+.google-search {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.google-input > input {
+  display: inline-block;
+}
+
+.google-cancel,
+.google-separator,
+.google-microphone,
+.google-magnifier {
+  display: none;
+}
+
+.google-profile {
+  display: none;
+}
+
+.google-navbot {
   display: none;
 }
 
