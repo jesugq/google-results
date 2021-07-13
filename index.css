@@ -1,5 +1,7 @@
 * {
   box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #222;
 }
 
 .accessibility-only {
@@ -11,7 +13,8 @@
 .google-navtop {
   display: flex;
   flex-wrap: nowrap;
-  margin-top: 20px;
+  align-items: center;
+  margin-top: 28px;
 }
 
 .google-logo {
@@ -24,17 +27,65 @@
 }
 
 .google-search {
+  margin-left: 14px;
+  padding: 0px 16px;
   display: flex;
   flex-wrap: nowrap;
+  height: 45px;
+  width: 700px;
+  border: 1px solid transparent;
+  border-radius: 24px;
+  box-shadow: 0px 2px 4px 1px rgba(60, 60, 60, 0.15);
+}
+
+.google-input {
+  flex: 1;
 }
 
 .google-input > input {
-  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border: none;
 }
 
-.google-cancel,
-.google-separator,
-.google-microphone,
+.google-input > input::placeholder {
+  color: black;
+}
+
+.google-cancel {
+  display: flex;
+  height: 46px;
+  width: 46px;
+}
+
+.google-cancel > svg {
+  margin: auto;
+  height: 60%;
+  width: 60%;
+}
+
+.google-cancel > svg > path {
+  fill: gray;
+}
+
+.google-separator {
+  margin: auto;
+  height: 75%;
+  border-left: 1px solid rgb(20, 20, 20, 0.15);
+}
+
+.google-microphone {
+  display: flex;
+  height: 46px;
+  width: 46px;
+}
+
+.google-microphone > svg {
+  margin: auto;
+  height: 60%;
+  width: 60%;
+}
+
 .google-magnifier {
   display: none;
 }
