@@ -12,12 +12,12 @@
 
 .google-navtop {
   display: flex;
-  flex-wrap: nowrap;
   align-items: center;
   margin-top: 28px;
 }
 
 .google-logo {
+  height: 30px;
   padding: 0px 28px;
 }
 
@@ -28,7 +28,8 @@
 
 .google-search {
   margin-left: 14px;
-  padding: 0px 16px;
+  padding-left: 16px;
+  padding-right: 8px;
   display: flex;
   flex-wrap: nowrap;
   height: 45px;
@@ -36,6 +37,10 @@
   border: 1px solid transparent;
   border-radius: 24px;
   box-shadow: 0px 2px 4px 1px rgba(60, 60, 60, 0.15);
+}
+
+.google-search:hover {
+  box-shadow: 0px 2px 8px 1px rgba(60, 60, 60, 0.25);
 }
 
 .google-input {
@@ -54,14 +59,14 @@
 
 .google-cancel {
   display: flex;
-  height: 46px;
-  width: 46px;
+  height: 40px;
+  width: 40px;
 }
 
 .google-cancel > svg {
   margin: auto;
-  height: 60%;
-  width: 60%;
+  height: 24px;
+  width: 24px;
 }
 
 .google-cancel > svg > path {
@@ -69,29 +74,76 @@
 }
 
 .google-separator {
-  margin: auto;
+  margin: auto 6px;
   height: 75%;
   border-left: 1px solid rgb(20, 20, 20, 0.15);
 }
 
 .google-microphone {
   display: flex;
-  height: 46px;
-  width: 46px;
+  height: 40px;
+  width: 40px;
 }
 
 .google-microphone > svg {
   margin: auto;
-  height: 60%;
-  width: 60%;
+  height: 24px;
+  width: 24px;
 }
 
 .google-magnifier {
-  display: none;
+  display: flex;
+  height: 40px;
+  width: 40px;
+}
+
+.google-magnifier > svg {
+  margin: auto;
+  height: 24px;
+  width: 24px;
+}
+
+.google-magnifier > svg > path {
+  fill: #4284ff;
 }
 
 .google-profile {
-  display: none;
+  margin-left: auto;
+  margin-right: 24px;
+  display: flex;
+}
+
+.google-tool {
+  margin: 0px 2px;
+  display: flex;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+.google-tool:hover {
+  background-color: lightgray;
+}
+
+.google-tool > svg {
+  margin: auto;
+  height: 24px;
+  width: 24px;
+}
+
+.google-tool > svg > path {
+  fill: #444;
+}
+
+.google-tool > svg > circle {
+  fill: #444;
+}
+
+.google-tool > img {
+  margin: auto;
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
 }
 
 .google-navbot {
