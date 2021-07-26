@@ -28,8 +28,8 @@
 
 .google-search {
   margin-left: 14px;
-  padding-left: 16px;
-  padding-right: 8px;
+  padding-left: 20px;
+  padding-right: 10px;
   display: flex;
   flex-wrap: nowrap;
   height: 45px;
@@ -147,7 +147,63 @@
 }
 
 .google-navbot {
-  display: none;
+  height: 60px;
+  border-bottom: 1px #eee solid;
+}
+
+.google-categorize {
+  margin-left: 175px;
+  width: 680px;
+  height: inherit;
+  display: flex;
+  align-items: flex-end;
+}
+
+.google-category {
+  height: 40px;
+  padding: 0px 8px;
+  display: flex;
+  align-items: center;
+}
+
+.google-minicon {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+}
+
+.google-minicon > svg > path {
+  fill: gray;
+}
+
+.google-minidea {
+  display: inline-block;
+}
+
+.google-minidea > p {
+  margin: 0px 4px;
+  font-size: 13px;
+  color: gray;
+}
+
+.google-module {
+  margin-left: auto;
+  height: 40px;
+  padding: 0px 10px;
+  display: flex;
+  align-items: center;
+}
+
+.google-category-selected {
+  border-bottom: 2px #1177ee solid;
+}
+
+.google-category-selected > .google-minicon > svg > path {
+  fill: #1177ee;
+}
+
+.google-category-selected > .google-minidea > p {
+  color: #1177ee;
 }
 
 main {
